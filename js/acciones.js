@@ -7,16 +7,16 @@
 		$('#disp table td').eq(7).text(device.platform);
 		$('#disp table td').eq(9).text(device.version);
 		$('#disp table td').eq(11).text(device.uuid);
-	document.addEvenlistener("pause",function(){
+	document.addEventlistener("pause",function(){
 		escribehistoria ('la app se pausó');
 	},false);
-	document.addEvenlistener("resume",function(){
+	document.addEventlistener("resume",function(){
 		escribehistoria ('la app se reinició');
 	},false);
-	document.addEvenlistener("online",function(){
+	document.addEventlistener("online",function(){
 		escribehistoria ('la app se conecto a la red');
 	},false);
-	document.addEvenlistener("offline",function(){
+	document.addEventlistener("offline",function(){
 		escribehistoria ('la app se desconecto a la red');
 	},false);
 	
